@@ -1,31 +1,83 @@
-# Gemini Project Manager Toolchain
+# 📋 Project Manager — Workspace & Task Sync
 
-This directory contains the custom automation suite used by the Gemini CLI to manage the workspace, fully integrated with the **PMOSkills Architecture**.
+This repository contains the custom automation suite used to manage the workspace, fully integrated with the **PMOSkills Architecture** and synced automatically with organization deliverables.
 
-## 🛠️ Tools
+---
 
-### `pm.py` / `bin/pm`
-The primary CLI for workspace management.
+## 🛠️ CLI Toolchain (`pm.py`)
 
-**Commands:**
-- `scan`: Scans all top-level directories and updates the master `INVENTORY.md`.
-- `status`: Identifies and displays the top 5 most recently active projects based on file modifications (excluding documentation).
-- `setup-pmo`: Initializes the workspace `.gemini/pmo` directory with the PMOSkills manuals and templates.
-- `scaffold <name> [--tier {Hobbyist,Consulting,Gov}]`: Initializes a new project directory with standardized `.gemini/GEMINI.md` and `README.md`. If Tier > Hobbyist, injects PMOSkills A04 Project Charter.
-- `audit <name>`: Audits a project for compliance and TIMWOODS waste (e.g., checks for uninstantiated `[...]` placeholders).
+The workspace comes equipped with a custom Python-based management CLI (`pm.py`) to automate inventory tracking, project initialization, and quality auditing.
 
-## 📁 Structure
-- `bin/`: Executable shims for easy access.
-- `core/`: The PMOSkills reference architecture (skills, artifacts, and routing governance).
-- `templates/`: Standardized project templates.
+### Commands
 
-## 🚀 Usage
+| Command | Description |
+| :--- | :--- |
+| **`scan`** | Scans all workspace directories and compiles/updates the master `INVENTORY.md`. |
+| **`status`** | Identifies and displays the top 5 most recently active projects based on code modifications. |
+| **`scaffold <name>`** | Initializes a new project directory with standardized `.gemini/GEMINI.md` and `README.md`. Optional: `--tier {Hobbyist,Consulting,Gov}` to auto-inject PMO templates. |
+| **`audit <name>`** | Audits a project's files for missing required assets and structural waste (unresolved `[...]` placeholders). |
+| **`setup-pmo`** | Installs/initializes the workspace `.gemini/pmo` directory with the PMOSkills manuals and templates. |
+
+### CLI Usage Examples
 ```bash
-./projectmanager/bin/pm scan
-./projectmanager/bin/pm status
-./projectmanager/bin/pm scaffold MyNewProject --tier Consulting
-./projectmanager/bin/pm audit MyNewProject
+# Scan and compile master inventory
+./pm.py scan
+
+# Show active coding projects
+./pm.py status
+
+# Scaffold a consulting tier project
+./pm.py scaffold MyNewProject --tier Consulting
+
+# Audit a project for compliance
+./pm.py audit MyNewProject
 ```
 
 ---
-*Managed by Gemini Project Manager*
+
+## 📁 Directory Structure
+
+```
+.
+├── bin/          # Executable shims for PM commands
+├── core/         # PMOSkills Reference Architecture (Manuals, Templates, Routing)
+├── templates/    # Standard templates for project scaffolding
+├── pm.py         # Main Project Manager CLI source code
+└── pm_sync.py    # GHA issues and roadmap synchronization agent
+```
+
+---
+
+## 🗺️ Live Organization Roadmap & Task Tracker
+
+The section below compiles all open issues, tasks, and pull requests from across the entire **RPDevs-Vault** organization, updated automatically on a daily schedule by the [Project Roadmap Sync](.github/workflows/pm-sync.yml) workflow using `pm_sync.py`.
+
+<!-- ROADMAP_START -->
+
+Last Synced: `2026-07-03 08:26:01 UTC`
+
+### 🔍 Open Pull Requests (Requires Review)
+- **`RPDevs-Vault/MALSync`**
+  - [PR #4: Auto Urls: Update Permissions](https://github.com/RPDevs-Vault/MALSync/pull/4) by @github-actions[bot]
+  - [PR #2: Auto Urls](https://github.com/RPDevs-Vault/MALSync/pull/2) by @github-actions[bot]
+
+### 📋 Open Tasks & Issues
+- **`RPDevs-Vault/container-manager`**
+  - [Issue #35: Weekly Docker Asset Collection Summary](https://github.com/RPDevs-Vault/container-manager/issues/35)
+  - [Issue #34: Weekly Docker Asset Collection Summary](https://github.com/RPDevs-Vault/container-manager/issues/34)
+  - [Issue #33: Weekly Docker Asset Collection Summary](https://github.com/RPDevs-Vault/container-manager/issues/33)
+  - [Issue #32: Weekly Docker Asset Collection Summary](https://github.com/RPDevs-Vault/container-manager/issues/32)
+  - [Issue #31: Weekly Docker Asset Collection Summary](https://github.com/RPDevs-Vault/container-manager/issues/31)
+  - [Issue #30: Weekly Docker Asset Collection Summary](https://github.com/RPDevs-Vault/container-manager/issues/30)
+  - [Issue #29: Weekly Docker Asset Collection Summary](https://github.com/RPDevs-Vault/container-manager/issues/29)
+  - [Issue #28: Weekly GHCR Audit Report](https://github.com/RPDevs-Vault/container-manager/issues/28)
+  - [Issue #27: Weekly Docker Asset Collection Summary](https://github.com/RPDevs-Vault/container-manager/issues/27)
+  - [Issue #1: Implement Organization-wide GHCR Auditor](https://github.com/RPDevs-Vault/container-manager/issues/1)
+- **`RPDevs-Vault/demo-repository`**
+  - [Issue #1: Test](https://github.com/RPDevs-Vault/demo-repository/issues/1)
+- **`RPDevs-Vault/vault-manager`**
+  - [Issue #13: License Audit: 20 projects missing licenses](https://github.com/RPDevs-Vault/vault-manager/issues/13)
+  - [Issue #12: Weekly Notification Heatmap](https://github.com/RPDevs-Vault/vault-manager/issues/12)
+
+
+<!-- ROADMAP_END -->
