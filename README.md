@@ -1,6 +1,11 @@
-# 📋 Project Manager — Workspace & Task Sync
+# 🗺️ Project Manager — Tier 3: Workspace & Task Sync
 
-This repository contains the custom automation suite used to manage the workspace, fully integrated with the **PMOSkills Architecture** and synced automatically with organization deliverables.
+Welcome to the **project-manager** console. This repository serves as the Tier 3 Task Synchronization Hub, containing custom automation used to manage the workspace and sync automatically with organization deliverables.
+
+* **Tier 0 Global Cockpit:** [github-manager](https://github.com/RPDevs-Vault/github-manager) (Live Health & Fleet Runners)
+* **Tier 1 Governance Hub:** [vault-manager](https://github.com/RPDevs-Vault/vault-manager) (Policies & Dispatching)
+* **Tier 2 Builder Fleet:** [container-manager](https://github.com/RPDevs-Vault/container-manager) (CI/CD & Registries)
+* **Tier 4 Release Gateway:** [distributor-manager](https://github.com/RPDevs-Vault/distributor-manager) (Artifact Distribution)
 
 ---
 
