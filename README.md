@@ -60,7 +60,7 @@ The section below compiles all open issues, tasks, and pull requests from across
 
 <!-- ROADMAP_START -->
 
-Last Synced: `2026-07-03 08:26:16 UTC`
+Last Synced: `2026-07-04 04:38:15 UTC`
 
 ### 🔍 Open Pull Requests (Requires Review)
 - **`RPDevs-Vault/MALSync`**
@@ -69,15 +69,8 @@ Last Synced: `2026-07-03 08:26:16 UTC`
 
 ### 📋 Open Tasks & Issues
 - **`RPDevs-Vault/container-manager`**
+  - [Issue #36: Weekly Docker Asset Collection Summary](https://github.com/RPDevs-Vault/container-manager/issues/36)
   - [Issue #35: Weekly Docker Asset Collection Summary](https://github.com/RPDevs-Vault/container-manager/issues/35)
-  - [Issue #34: Weekly Docker Asset Collection Summary](https://github.com/RPDevs-Vault/container-manager/issues/34)
-  - [Issue #33: Weekly Docker Asset Collection Summary](https://github.com/RPDevs-Vault/container-manager/issues/33)
-  - [Issue #32: Weekly Docker Asset Collection Summary](https://github.com/RPDevs-Vault/container-manager/issues/32)
-  - [Issue #31: Weekly Docker Asset Collection Summary](https://github.com/RPDevs-Vault/container-manager/issues/31)
-  - [Issue #30: Weekly Docker Asset Collection Summary](https://github.com/RPDevs-Vault/container-manager/issues/30)
-  - [Issue #29: Weekly Docker Asset Collection Summary](https://github.com/RPDevs-Vault/container-manager/issues/29)
-  - [Issue #28: Weekly GHCR Audit Report](https://github.com/RPDevs-Vault/container-manager/issues/28)
-  - [Issue #27: Weekly Docker Asset Collection Summary](https://github.com/RPDevs-Vault/container-manager/issues/27)
   - [Issue #1: Implement Organization-wide GHCR Auditor](https://github.com/RPDevs-Vault/container-manager/issues/1)
 - **`RPDevs-Vault/demo-repository`**
   - [Issue #1: Test](https://github.com/RPDevs-Vault/demo-repository/issues/1)
