@@ -60,7 +60,7 @@ The section below compiles all open issues, tasks, and pull requests from across
 
 <!-- ROADMAP_START -->
 
-Last Synced: `2026-07-04 04:38:15 UTC`
+Last Synced: `2026-07-05 04:59:55 UTC`
 
 ### 🔍 Open Pull Requests (Requires Review)
 - **`RPDevs-Vault/MALSync`**
@@ -69,6 +69,8 @@ Last Synced: `2026-07-04 04:38:15 UTC`
 
 ### 📋 Open Tasks & Issues
 - **`RPDevs-Vault/container-manager`**
+  - [Issue #38: Weekly Docker Asset Collection Summary](https://github.com/RPDevs-Vault/container-manager/issues/38)
+  - [Issue #37: Weekly Docker Asset Collection Summary](https://github.com/RPDevs-Vault/container-manager/issues/37)
   - [Issue #36: Weekly Docker Asset Collection Summary](https://github.com/RPDevs-Vault/container-manager/issues/36)
   - [Issue #35: Weekly Docker Asset Collection Summary](https://github.com/RPDevs-Vault/container-manager/issues/35)
   - [Issue #1: Implement Organization-wide GHCR Auditor](https://github.com/RPDevs-Vault/container-manager/issues/1)
