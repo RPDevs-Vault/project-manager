@@ -60,7 +60,7 @@ The section below compiles all open issues, tasks, and pull requests from across
 
 <!-- ROADMAP_START -->
 
-Last Synced: `2026-07-07 04:56:09 UTC`
+Last Synced: `2026-07-08 04:16:52 UTC`
 
 ### 🔍 Open Pull Requests (Requires Review)
 - **`RPDevs-Vault/MALSync`**
@@ -69,6 +69,7 @@ Last Synced: `2026-07-07 04:56:09 UTC`
 
 ### 📋 Open Tasks & Issues
 - **`RPDevs-Vault/container-manager`**
+  - [Issue #42: Weekly Docker Asset Collection Summary](https://github.com/RPDevs-Vault/container-manager/issues/42)
   - [Issue #41: Weekly Docker Asset Collection Summary](https://github.com/RPDevs-Vault/container-manager/issues/41)
   - [Issue #40: Weekly Docker Asset Collection Summary](https://github.com/RPDevs-Vault/container-manager/issues/40)
   - [Issue #39: Weekly GHCR Audit Report](https://github.com/RPDevs-Vault/container-manager/issues/39)
